@@ -1,0 +1,46 @@
+{
+  "name": "lzm-intelligent-reservoir-rtsp2flv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ws": "nodemon ./server/index.js",
+    "ws:pro": "nodemon --exec babel-node server/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "es6-promise": "^4.2.8",
+    "fluent-ffmpeg": "^2.1.2",
+    "flv.js": "^1.6.2",
+    "js-md5": "^0.7.3",
+    "node-windows": "^1.0.0-beta.6",
+    "nodemon": "^2.0.15",
+    "websocket-stream": "^5.5.2",
+    "ws": "^8.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
